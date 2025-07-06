@@ -77,7 +77,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <motion.div
           ref={ref}
           className="text-center mb-16"
@@ -220,8 +220,8 @@ const Contact = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
-              <p className="text-gray-600 mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 p-2">Contact Information</h3>
+              <p className="text-gray-600 mb-8 p-2">
                 Get in touch with us for any queries or to discuss your construction project. 
                 We're here to help bring your vision to life.
               </p>
@@ -234,8 +234,8 @@ const Contact = () => {
                   className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                   whileHover={{ scale: 1.02 }}
                 >
-                  <div className="flex items-start space-x-4">
-                    <div className={`p-3 rounded-lg bg-gray-100 ${info.color}`}>
+                  <div className="flex items-start ">
+                    <div className={`rounded-lg bg-gray-100 ${info.color}`}>
                       <info.icon className="h-6 w-6" />
                     </div>
                     <div>

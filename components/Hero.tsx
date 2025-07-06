@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative h-screen overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 h-full">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -89,7 +89,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-poppins text-shadow"
+            className="text-4xl invisible md:text-6xl lg:text-7xl font-bold text-white mb-6 font-poppins text-shadow"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

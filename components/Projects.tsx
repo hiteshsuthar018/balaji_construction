@@ -196,7 +196,7 @@ const Projects = () => {
               onClick={() => setSelectedProject(null)}
             >
               <motion.div
-                className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+                className="bg-white rounded-2xl w-full max-w-6xl mx-4 max-h-[90vh] overflow-y-auto"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
@@ -210,12 +210,12 @@ const Projects = () => {
                     <div className="relative">
                       <button
                         onClick={() => setSelectedProject(null)}
-                        className="absolute top-4 right-4 z-10 p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                        className="absolute top-4 right-4 z-10 p-2 bg-white/90 rounded-full hover:bg-white transition-colors shadow-lg"
                       >
                         <X className="h-6 w-6" />
                       </button>
                       
-                      <div className="relative h-96 overflow-hidden rounded-t-2xl">
+                      <div className="relative h-64 md:h-96 overflow-hidden rounded-t-2xl">
                         <img
                           src={project.image}
                           alt={project.title}
@@ -224,15 +224,15 @@ const Projects = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                       </div>
                       
-                      <div className="p-8">
-                        <div className="flex items-center justify-between mb-4">
-                          <h3 className="text-3xl font-bold text-gray-900">{project.title}</h3>
-                          <span className="px-3 py-1 bg-orange-600 text-white text-sm font-medium rounded-full">
+                      <div className="p-6 md:p-8">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-4">
+                          <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{project.title}</h3>
+                          <span className="px-3 py-1 bg-orange-600 text-white text-sm font-medium rounded-full self-start md:self-auto">
                             {project.category}
                           </span>
                         </div>
                         
-                        <div className="grid md:grid-cols-3 gap-4 mb-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
                           <div className="flex items-center text-gray-600">
                             <MapPin className="h-5 w-5 mr-2 text-orange-600" />
                             <span>{project.location}</span>
@@ -247,11 +247,11 @@ const Projects = () => {
                           </div>
                         </div>
                         
-                        <p className="text-lg text-gray-700 mb-6">{project.description}</p>
+                        <p className="text-base md:text-lg text-gray-700 mb-6">{project.description}</p>
                         
                         <div>
                           <h4 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h4>
-                          <div className="grid md:grid-cols-2 gap-2">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                             {project.features.map((feature, index) => (
                               <div key={index} className="flex items-center text-gray-600">
                                 <div className="w-2 h-2 bg-orange-600 rounded-full mr-3"></div>
