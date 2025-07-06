@@ -35,8 +35,8 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto">
+    <section id="about" className="py-20 px-1 bg-gray-50">
+      <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
           className="text-center mb-16"

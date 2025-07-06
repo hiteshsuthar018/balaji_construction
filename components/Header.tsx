@@ -57,7 +57,7 @@ const Header = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex w-full">
+          <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <motion.button
                 key={item.name}
