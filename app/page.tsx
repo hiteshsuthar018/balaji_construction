@@ -10,10 +10,12 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ThreeScene from '@/components/ThreeScene';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
     <div className="relative">
+      <Analytics/>
       <Header />
       <main>
         <Hero />
